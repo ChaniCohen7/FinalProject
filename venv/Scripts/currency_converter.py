@@ -5,6 +5,7 @@ from urllib.request import urlopen
 import json
 # store the URL in url as
 # parameter for urlopen
+
 url = "https://api.exchangerate-api.com/v4/latest/USD"
 
 # store the response of URL

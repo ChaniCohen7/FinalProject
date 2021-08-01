@@ -1,10 +1,32 @@
-import datetime
-from datetime import datetime
-from currency_converter import *
+# import urllib library
+from urllib.request import urlopen
+# import json
+import json
+# import tkinter
+import tkinter
+from tkinter import *
 from datetime import *
 from datetime import date
 
-from tkinter import *
+
+# store the URL in url as
+# parameter for urlopen
+url = "https://api.exchangerate-api.com/v4/latest/USD"
+# store the response of URL
+response = urlopen(url)
+# storing the JSON response
+# from url in data
+data_json = json.loads(response.read())
+# print the json response
+print(data_json)
+def convert_to_usd(num,kind):
+    print(float(num/float(data_json["rates"][kind])))
+    return float(num/float(data_json["rates"][kind]))
+# print(convert_to_usd(86,"AED"))
+def convert_from_usd(num,kind):
+    print(float(num*float(data_json["rates"][kind])))
+    return float(num*float(data_json["rates"][kind]))
+# print(convert_from_usd(2,"AED"))
 def keep_all_convert(convert_from_txt,convert_to_txt,money_convert,result):
 
 
@@ -16,11 +38,9 @@ def keep_all_convert(convert_from_txt,convert_to_txt,money_convert,result):
 
     #print("Today's date:", today)
     current_time = now.strftime("%H:%M:%S")
-    with open('11.txt', 'a') as the_file:
+    with open('ConversionDocumentation.txt', 'a') as the_file:
         the_file.write(f'\n date:{fdate} time: {current_time} from: {convert_from_txt} to: {convert_to_txt} money: {money_convert} result: {result}')
 def click():
-
-
     convert_from_txt=(convert_from1.get(ACTIVE))
     convert_to_txt=(convert_to1.get(ACTIVE))
     money_convert = int(money1.get())
@@ -31,9 +51,6 @@ def click():
     result = Label(f, text=temp, anchor="w", bg="red", fg="blue",bd="10")
     result.pack(fill="x", padx=100, pady=10)
     keep_all_convert(convert_from_txt,convert_to_txt,money_convert,temp)
-
-
-
 
 ws = Tk()
 ws.title('Python Guides')
@@ -67,3 +84,12 @@ btn = Button(f, text="Convert",command=click,bg="red", fg="blue",bd="10")
 btn.pack(fill="x")
 f.pack(padx=100, pady=40)
 f.mainloop()
+
+
+
+
+
+
+
+
+

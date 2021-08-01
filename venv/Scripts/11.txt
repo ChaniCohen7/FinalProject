@@ -1,0 +1,3 @@
+
+ date:01/08/2021 time: 14:04:09 from: AED to: USD money: 5 result: 1.3623978201634879
+ date:01/08/2021 time: 14:04:26 from: AFN to: USD money: 541 result: 6.776900914443192
