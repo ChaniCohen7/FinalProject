@@ -6,37 +6,27 @@ from datetime import date
 
 from tkinter import *
 def keep_all_convert(convert_from_txt,convert_to_txt,money_convert,result):
-
-
     now = datetime.now()
     today = date.today()
     fdate = date.today().strftime('%d/%m/%Y')
-
-
-
-    #print("Today's date:", today)
     current_time = now.strftime("%H:%M:%S")
-    with open('11.txt', 'a') as the_file:
-        the_file.write(f'\n date:{fdate} time: {current_time} from: {convert_from_txt} to: {convert_to_txt} money: {money_convert} result: {result}')
+    with open('ConversionDocumentation.txt', 'a') as the_file:
+        the_file.write(f' date:{fdate} time: {current_time} from: {convert_from_txt} to: {convert_to_txt} money: {money_convert} result: {result}\n')
+
 def click():
-
-
     convert_from_txt=(convert_from1.get(ACTIVE))
     convert_to_txt=(convert_to1.get(ACTIVE))
-    money_convert = int(money1.get())
-    print(money_convert,convert_from_txt,convert_to_txt)
+    if money1.get().isdigit():
+        money_convert = int(money1.get())
+        print(money_convert,convert_from_txt,convert_to_txt)
+        temp=convert_from_usd(convert_to_usd(money_convert,convert_from_txt),convert_to_txt)
+        print(temp)
+        result = Label(f, text=temp, anchor="w", bg="red", fg="blue",bd="10")
+        result.pack(fill="x", padx=100, pady=10)
+        keep_all_convert(convert_from_txt,convert_to_txt,money_convert,temp)
     money1.delete(0, END)
-    temp=convert_from_usd(convert_to_usd(money_convert,convert_from_txt),convert_to_txt)
-    print(temp)
-    result = Label(f, text=temp, anchor="w", bg="red", fg="blue",bd="10")
-    result.pack(fill="x", padx=100, pady=10)
-    keep_all_convert(convert_from_txt,convert_to_txt,money_convert,temp)
-
-
-
-
 ws = Tk()
-ws.title('Python Guides')
+ws.title('Convert Money')
 ws.geometry('4000x3000')
 ws.config(bg='#1bafb8')
 f = Frame(ws,padx=200, pady=80)

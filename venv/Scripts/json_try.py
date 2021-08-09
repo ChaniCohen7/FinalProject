@@ -16,3 +16,6 @@ data_json = json.loads(response.read())
 
 # print the json response
 print(data_json)
+
+update=data_json[date]
+print(update)

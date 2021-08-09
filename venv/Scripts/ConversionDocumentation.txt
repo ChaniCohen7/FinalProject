@@ -1,3 +1,17 @@
 
  date:01/08/2021 time: 13:56:01 from: USD to: AFN money: 65 result: 5188.95
  date:01/08/2021 time: 13:56:50 from: USD to: AFN money: 44 result: 3512.52
+ date:01/08/2021 time: 14:28:13 from: AED to: USD money: 88 result: 23.978201634877383
+ date:01/08/2021 time: 14:28:19 from: AED to: USD money: 44 result: 11.989100817438691 date:01/08/2021 time: 15:11:43 from: USD to: AFN money: 55 result: 4390.65
+ date:01/08/2021 time: 15:24:19 from: USD to: AFN money: 5 result: 399.15
+ date:08/08/2021 time: 16:28:20 from: AFN to: AED money: 45 result: 2.064116985376828
+ date:08/08/2021 time: 16:28:25 from: AFN to: AFN money: 8 result: 8.0
+ date:08/08/2021 time: 16:59:37 from: AFN to: USD money: 55 result: 0.6874140732408448
+ date:08/08/2021 time: 16:59:41 from: AFN to: USD money: 8 result: 0.09998750156230471
+
+ date:10/08/2021 time: 00:15:31 from: USD to: AFN money: 8 result: 640.0
+ date:10/08/2021 time: 00:15:34 from: USD to: AFN money: 55 result: 4400.0date:10/08/2021 time: 00:55:21 from: AFN to: AFN money: 88 result: 88.0
+ date:10/08/2021 time: 00:55:24 from: AFN to: AFN money: 4 result: 4.0
+ date:10/08/2021 time: 01:24:50 from: AFN to: AMD money: 4 result: 24.631
+ date:10/08/2021 time: 01:25:01 from: USD to: USD money: 4 result: 4.0
+ 
