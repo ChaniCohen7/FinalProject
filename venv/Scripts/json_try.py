@@ -1,21 +1,21 @@
-# import urllib library
-from urllib.request import urlopen
+import tkinter as tk
 
-# import json
-import json
-# store the URL in url as
-# parameter for urlopen
-url = "https://api.exchangerate-api.com/v4/latest/USD"
 
-# store the response of URL
-response = urlopen(url)
+# Creating the root window
+root = tk.Tk()
 
-# storing the JSON response
-# from url in data
-data_json = json.loads(response.read())
+# creating the Label with
+# the text Middle
+Label_middle = tk.Label(root,
+                        text ='Middle')
 
-# print the json response
-print(data_json)
-
-update=data_json[date]
-print(update)
+# Placing the Label at
+# the middle of the root window
+# relx and rely should be properly
+# set to position the label on
+# root window
+Label_middle.place(relx = 0.7,
+                   rely = 0.5,
+                   anchor = 'center')
+# Execute Tkinter
+root.mainloop()

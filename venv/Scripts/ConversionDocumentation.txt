@@ -14,4 +14,8 @@
  date:10/08/2021 time: 00:55:24 from: AFN to: AFN money: 4 result: 4.0
  date:10/08/2021 time: 01:24:50 from: AFN to: AMD money: 4 result: 24.631
  date:10/08/2021 time: 01:25:01 from: USD to: USD money: 4 result: 4.0
+ date:10/08/2021 time: 01:33:37 from: USD to: USD money: 8 result: 8.0
+ date:10/08/2021 time: 01:33:48 from: AED to: AMD money: 5 result: 671.1444141689374
+ date:10/08/2021 time: 02:57:28 from: ALL to: ALL money: 4 result: 4.0
+ date:10/08/2021 time: 02:57:45 from: ALL to: ARS money: 5 result: 4.708685925493628
  
