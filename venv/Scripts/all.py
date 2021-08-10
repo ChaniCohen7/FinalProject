@@ -1,15 +1,14 @@
 from urllib.request import urlopen
-from server import *
 import json
 import tkinter
 from tkinter import *
 from tkinter import ttk
 from datetime import *
 import os
-
-url = "https://api.exchangerate-api.com/v4/latest/USD"
-response = urlopen(url)
-data_json = json.loads(response.read())
+# url = "https://api.exchangerate-api.com/v4/latest/USD"
+# response = urlopen(url)
+# data_json = json.loads(response.read())
+# print(data_json)
 def convert_to_usd(num,kind):
     print(float(num/float(data_json["rates"][kind])))
     return float(num/float(data_json["rates"][kind]))
@@ -48,7 +47,7 @@ f = Frame(ws,padx=200, pady=80)
 current_date=data_json["date"].split('-')
 update_to_show="last update on: "+current_date[2]+'/'+current_date[1]+'/'+current_date[0]
 last_update = Label(ws, text=update_to_show, anchor="w",bg="red", fg="blue",bd="10")
-last_update.pack(fill="x",padx=20, pady=20)
+last_update.pack(fill="x")
 
 convert_from = Label(ws, text="convert_from: ", anchor="w",bg="red", fg="blue",bd="10")
 convert_from.pack(fill="x",padx=100, pady=10)
@@ -75,20 +74,20 @@ f.pack(padx=200, pady=40)
 ws.result = Label(ws, text="result:", anchor="w", bg="red", fg="blue",bd="10")
 ws.result.pack(fill="x", padx=100, pady=10)
 
-last_update.place(relx = 0.5,rely = 0.7,anchor = 'center')
+#last_update.place(relx = 0.2,rely = 0.2,anchor = 'center')
 
+convert_to.place(relx = 0.9,rely = 0.1,anchor = 'center')
+convert_to1.place(relx = 0.9,rely = 0.2,anchor = 'center')
 
-convert_from.place(relx = 0.2,rely = 0.2,anchor = 'center')
-convert_from1.place(relx = 0.2,rely = 0.3,anchor = 'center')
-
-convert_to.place(relx = 0.8,rely = 0.2,anchor = 'center')
-convert_to1.place(relx = 0.8,rely = 0.3,anchor = 'center')
+convert_from.place(relx = 0.1,rely = 0.1,anchor = 'center')
+convert_from1.place(relx = 0.1,rely = 0.2,anchor = 'center')
+#
 
 money1.place(relx = 0.5,rely = 0.5,anchor = 'sw')
-money.place(relx = 0.5,rely = 0.3,anchor = 'center')
-money1.place(relx = 0.5,rely = 0.4,anchor = 'center')
-btn.place(relx = 0.5,rely = 0.5,anchor = 'center')
-ws.result.place(relx = 0.5,rely = 0.6,anchor = 'center')
+money.place(relx = 0.5,rely = 0.4,anchor = 'center')
+money1.place(relx = 0.5,rely = 0.,anchor = 'center')
+btn.place(relx = 0.5,rely = 2.5,anchor = 'center')
+ws.result.place(relx = 0.5,rely = 5.9,anchor = 'center')
 ws.mainloop()
 
 

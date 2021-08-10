@@ -18,4 +18,13 @@
  date:10/08/2021 time: 01:33:48 from: AED to: AMD money: 5 result: 671.1444141689374
  date:10/08/2021 time: 02:57:28 from: ALL to: ALL money: 4 result: 4.0
  date:10/08/2021 time: 02:57:45 from: ALL to: ARS money: 5 result: 4.708685925493628
+ date:10/08/2021 time: 23:51:49 from: AMD to: USD money: 88 result: 0.17912027519387733
+ date:10/08/2021 time: 23:51:52 from: AMD to: USD money: 4 result: 0.008141830690630788
+ date:10/08/2021 time: 23:57:33 from: AED to: AED money: 4 result: 4.0
+ date:10/08/2021 time: 23:57:38 from: AED to: AED money: 99 result: 99.0
+ date:10/08/2021 time: 23:59:34 from: ALL to: AFN money: 2 result: 1.5480247869868318
+ date:10/08/2021 time: 23:59:38 from: ALL to: AFN money: 44 result: 34.0565453137103
+ date:11/08/2021 time: 00:05:14 from: AED to: AFN money: 5 result: 108.91008174386921
+ date:11/08/2021 time: 00:05:19 from: AED to: AFN money: 1 result: 21.782016348773844
+ date:11/08/2021 time: 00:18:18 from: USD to: AMD money: 5 result: 2456.4500000000003
  
