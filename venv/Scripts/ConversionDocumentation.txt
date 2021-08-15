@@ -27,4 +27,5 @@
  date:11/08/2021 time: 00:05:14 from: AED to: AFN money: 5 result: 108.91008174386921
  date:11/08/2021 time: 00:05:19 from: AED to: AFN money: 1 result: 21.782016348773844
  date:11/08/2021 time: 00:18:18 from: USD to: AMD money: 5 result: 2456.4500000000003
+ date:14/08/2021 time: 23:36:59 from: AOA to: AFN money: 14 result: 1.7457271271053327
  

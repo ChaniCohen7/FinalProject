@@ -1,4 +1,4 @@
-from all import *
+from form import *
 
-a=all()
-a.run()
+if __name__ == '__main__':
+    f = form()
